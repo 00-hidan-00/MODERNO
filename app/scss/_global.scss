@@ -13,10 +13,11 @@ body {
 	flex: 1 0 auto;
 }
 body {
-	font-family: "Roboto-Regular";
+	font-family: "Roboto-Regular", sans-serif;
+	font-weight: 400;
 	font-size: 15px;
 	line-height: 24px;
-	color: #546e7a;
+	color: $text;
 }
 .footer {
 	flex: 0 0 auto;

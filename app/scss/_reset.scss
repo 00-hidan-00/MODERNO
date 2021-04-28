@@ -30,6 +30,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  font-size: inherit;
 }
 
 ul[class] {
@@ -51,5 +52,5 @@ select {
 a {
   display: inline-block;
   text-decoration: none;
-  color: $color-text;
+  color: $text;
 }

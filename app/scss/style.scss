@@ -13,6 +13,199 @@
    }
    &__text {
       margin-left: auto;
-      margin-right: 25px;
+      margin-right: 50px;
+   }
+   span {
+      color: $red;
+   }
+   &__btn {
+      padding: 4px;
+      width: 72px;
+      border-radius: 4px;
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+   }
+   &__btn-login {
+      background-color: $green;
+   }
+   &__btn-register {
+      background-color: $red;
+      margin-left: 7px;
+   }
+   &__menu {
+      background-color: $bg;
    }
 }
+.menu {
+   display: flex;
+   align-items: center;
+   height: 60px;
+   &__list {
+      li {
+         display: inline-block;
+         & + li {
+            margin-left: 30px;
+         }
+      }
+      a {
+         color: #fff;
+         font-size: 14px;
+      }
+   }
+}
+
+// end header
+// start footer
+
+.footer {
+   background-color: $bg;
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      padding: 100px 0 80px;
+   }
+   &__copy {
+      border-top: 1px solid #424d53;
+   }
+   &__copy-text {
+      text-align: center;
+      font-size: 15px;
+      color: #919699;
+      padding: 25px 0 25px;
+   }
+   &__col {
+      max-width: 270px;
+      width: 100%;
+      &-menu {
+         max-width: 220px;
+      }
+      &-title {
+         color: #fff;
+         font-size: 22px;
+         font-family: "Raleway", sans-serif;
+         font-weight: 700;
+         padding-bottom: 30px;
+         margin-bottom: 30px;
+         position: relative;
+         &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 1px;
+            width: 51px;
+            height: 3px;
+            background-color: $green;
+         }
+      }
+      &-text {
+         color: #b7c3c8;
+         margin-bottom: 30px;
+      }
+   }
+   &__info {
+      margin-top: 18px;
+      font-family: "Lato", sans-serif;
+      padding-left: 30px;
+      position: relative;
+      &::before {
+         position: absolute;
+         content: "\f041";
+         font-family: "icomoon";
+         color: $green;
+         font-size: 18px;
+         left: 0;
+      }
+      &-phone {
+         &::before {
+            position: absolute;
+            content: "\f095";
+         }
+      }
+   }
+   &__col-list {
+      a {
+         margin-bottom: 10px;
+         color: #b7b7b7;
+         padding-left: 22px;
+         position: relative;
+         &::before {
+            content: "\f105";
+            color: $green;
+            position: absolute;
+            left: 0;
+            font-size: 18px;
+            font-family: "icomoon";
+         }
+      }
+   }
+   &__social-link {
+      li {
+         display: inline-block;
+         & + li {
+            margin-left: 7px;
+         }
+      }
+      margin-bottom: 33px;
+      a {
+         width: 28px;
+         height: 28px;
+         background-image: url(../images/css_sprites.png);
+      }
+   }
+   &__form-title {
+      margin-bottom: 15px;
+      color: #fff;
+      font-size: 20px;
+   }
+   &__form {
+      position: relative;
+      input {
+         border: none;
+         background-color: #2f3c43;
+         display: block;
+         width: 100%;
+         height: 40px;
+         color: #fff;
+         font-size: 14px;
+         padding-left: 13px;
+         padding-right: 50px;
+         &::placeholder {
+            color: #697378;
+         }
+      }
+      button {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         background-color: $green;
+         border: none;
+         height: 40px;
+         width: 43px;
+         cursor: pointer;
+         &::before {
+            content: "\f124";
+            position: absolute;
+            font-family: "icomoon";
+            color: #fff;
+            font-size: 20px;
+            top: 8px;
+            left: 13px;
+         }
+      }
+   }
+}
+.link-twitter {
+   background-position: -84px 0;
+}
+.link-you-tube {
+   background-position: -112px 0;
+}
+.link-pinterest {
+   background-position: -56px 0;
+}
+.link-linkedin {
+   background-position: -28px 0;
+}
+
+// end footer
