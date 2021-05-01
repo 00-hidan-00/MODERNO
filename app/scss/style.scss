@@ -209,3 +209,59 @@
 }
 
 // end footer
+
+// start search
+
+.search {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   min-height: 532px;
+   &__inner {
+      padding: 135px 0 100px;
+      color: #fff;
+      text-align: center;
+      &-title {
+         margin-bottom: 10px;
+         font-weight: 700;
+         font-size: 48px;
+         line-height: 72px;
+      }
+      &-text {
+         margin-bottom: 50px;
+         font-weight: 500;
+         font-size: 20px;
+         line-height: 30px;
+      }
+      &-form {
+         max-width: 670px;
+         width: 100%;
+         margin: 0 auto;
+         position: relative;
+         input {
+            display: block;
+            width: 100%;
+            box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+            border-radius: 4px;
+            height: 56px;
+            border: none;
+            font-size: 14px;
+            font-weight: 500;
+            outline: none;
+            padding-left: 25px;
+            padding-right: 60px;
+            &::placeholder {
+               font-weight: 500;
+               color: #90a4ae;
+            }
+         }
+         button {
+            position: absolute;
+            border: none;
+            background-color: transparent;
+            right: 16px;
+            top: 17px;
+         }
+      }
+   }
+}
