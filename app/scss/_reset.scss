@@ -9,7 +9,8 @@ html {
 }
 
 ul[class],
-ol[class] {
+ol[class],
+ul {
   padding: 0;
 }
 
@@ -37,7 +38,8 @@ dd {
   font-size: inherit;
 }
 
-ul[class] {
+ul[class],
+li {
   list-style: none;
 }
 
