@@ -168,7 +168,7 @@
       transition: all 0.3s;
       height: 0;
       overflow: hidden;
-      top: 69px;
+      top: 68px;
       a {
          font-size: 12px;
          color: #546e7a;
@@ -189,6 +189,9 @@
          overflow: auto;
       }
    }
+}
+.basket__box {
+   margin-right: 20px;
 }
 .basket__box,
 .message__box,
