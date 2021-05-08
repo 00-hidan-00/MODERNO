@@ -12,13 +12,7 @@ body {
 .main {
 	flex: 1 0 auto;
 }
-body {
-	font-family: "Roboto-Regular", sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 24px;
-	color: $text;
-}
+
 .footer {
 	flex: 0 0 auto;
 }
@@ -28,6 +22,13 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+// body {
+// 	font-family: "Roboto-Regular", sans-serif;
+// 	font-weight: 400;
+// 	font-size: 15px;
+// 	line-height: 24px;
+// 	color: $text;
+// }
 
 .container-fluid {
 	max-width: 100%;

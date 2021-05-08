@@ -730,6 +730,7 @@
          left: 0;
       }
       &-phone {
+         color: $text;
          &::before {
             position: absolute;
             content: "\f095";
