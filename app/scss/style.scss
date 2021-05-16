@@ -165,7 +165,7 @@
       background-color: #fff;
       padding: 0 20px;
       width: 158px;
-      transition: all 0.3s;
+
       height: 0;
       overflow: hidden;
       top: 68px;
@@ -177,9 +177,6 @@
    }
 }
 .user__box {
-   // .basket__box,
-   // .message__box,
-   // .notification__box
    position: relative;
    &:hover {
       .user__menu {
