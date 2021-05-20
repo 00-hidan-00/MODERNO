@@ -14,9 +14,15 @@ ul {
   padding: 0;
 }
 
+html,
 body {
-  overflow-x: hidden;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
+// body {
+//   overflow-x: hidden;
+// }
 
 body,
 h1,
