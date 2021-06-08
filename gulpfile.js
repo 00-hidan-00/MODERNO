@@ -46,7 +46,7 @@ function scripts() {
     'app/js/main.js',
     'node_modules/mixitup/dist/mixitup.js',
     'node_modules/rateyo/src/jquery.rateyo.js',
-    "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
@@ -59,7 +59,8 @@ function styles() {
   return src(['app/scss/style.scss',
     'node_modules/slick-carousel/slick/slick.css',
     'node_modules/rateyo/src/jquery.rateyo.css',
-    "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"])
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
+  ])
     .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
