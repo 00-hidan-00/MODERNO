@@ -178,7 +178,7 @@
       background-color: #fff;
       padding: 0 20px;
       width: 158px;
-
+      z-index: 5;
       height: 0;
       overflow: hidden;
       top: 91px;
@@ -1806,7 +1806,9 @@
 
 // start page-404
 .page-404,
-.about {
+.about,
+.contact {
+   padding-bottom: 150px;
    background-color: #f4f6f5;
 }
 .page-404__wrapper,
@@ -1814,7 +1816,6 @@
 .contact__wrapper {
    border: 1px solid #dcdcdc;
    background-color: #fff;
-   margin-bottom: 150px;
 }
 .page-404__head,
 .contact__head {
@@ -1898,9 +1899,6 @@
 
 // start contacts
 
-.contact {
-   background-color: #f4f6f5;
-}
 .contact__head {
    padding-left: 40px;
    padding-right: 40px;
@@ -2116,6 +2114,209 @@
    color: #fff;
    cursor: pointer;
 }
-//end settings
+// end settings
+
+// start profile
+
+.profile__inner {
+   display: flex;
+   margin-bottom: 30px;
+}
+.profile__aside {
+   margin-right: 30px;
+   max-width: 270px;
+   width: 100%;
+   .aside__item {
+      margin-bottom: 31px;
+   }
+}
+.profile__content {
+   width: 100%;
+}
+.profile-status {
+   font-size: 13px;
+   padding: 9px 9px 9px 30px;
+   border: 1px solid #d6d6d6;
+   color: #707070;
+   position: relative;
+   &::before {
+      position: absolute;
+      content: "";
+      left: 11px;
+      top: 12px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+   }
+}
+.profile-on {
+   &::before {
+      background-color: $green;
+   }
+}
+.profile-off {
+   &::before {
+      background-color: $red;
+   }
+}
+.profile__asaid-btn {
+   margin-bottom: 13px;
+   text-align: center;
+}
+.profile__asai-message {
+   margin-bottom: 17px;
+   display: block;
+   width: 100%;
+   font-size: 16px;
+   color: #fff;
+   background-color: $text;
+   box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+   @include f500;
+   padding: 18px 10px;
+   position: relative;
+   &::before {
+      content: "\f003";
+      font-family: "icomoon";
+      position: absolute;
+      top: 18px;
+      left: 50px;
+   }
+}
+.profile__asai-following {
+   margin-bottom: 17px;
+   display: block;
+   width: 100%;
+   font-size: 16px;
+   color: #fff;
+   background-color: $green;
+   box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+   @include f700;
+   padding: 18px 10px;
+}
+.profile__banner {
+   padding: 20px;
+   background-color: #fff;
+   border: 1px solid #dedede;
+   margin-bottom: 30px;
+}
+.profile__banner-images {
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   min-height: 332px;
+}
+.profile__items {
+   display: flex;
+   border: 1px solid #dedede;
+   .product__item-star {
+      line-height: 0px;
+      padding-top: 10px;
+   }
+}
+.profile__item {
+   width: 25%;
+   background-color: #fff;
+   text-align: center;
+   padding: 20px 5px 17px;
+   & + .profile__item {
+      border-left: 1px solid #dedede;
+   }
+   &-title {
+      font-size: 14px;
+      color: $bg;
+      @include f500;
+   }
+   &-content {
+      font-size: 14px;
+      color: #707070;
+      @include f500;
+      & + .profile__item-sales {
+         color: $bg;
+      }
+   }
+}
+.settings__tabs {
+   .tabs {
+      .tab.icon-briefcase,
+      .tab.icon-comments-o,
+      .tab.icon-users {
+         span {
+            padding: 0;
+            display: inline-block;
+            border: none;
+         }
+      }
+   }
+}
+.profile-settings {
+   .product-one__tabs.settings__tabs {
+      .tabs span {
+         font-family: "Roboto", sans-serif !important;
+         font-weight: 500px;
+         color: #707070;
+         position: relative;
+         &.active::before {
+            color: $green;
+         }
+         &::before {
+            position: absolute;
+            left: 25px;
+            top: 16px;
+            font-size: 14px;
+            font-family: "icomoon";
+            color: #dedede;
+         }
+      }
+   }
+}
+.personal__box {
+   background-color: #fff;
+   padding: 35px 40px 25px;
+   border: 1px solid #dedede;
+}
+.personal__box-title {
+   margin-bottom: 25px;
+   @include f700;
+   color: $bg;
+   font-size: 20px;
+}
+.personal__box-text {
+   margin-bottom: 20px;
+   p {
+      color: #707070;
+      line-height: 25px;
+   }
+}
+.personal__box-item-head {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 16px;
+}
+.personal__box-item-name {
+   color: $bg;
+   @include f500;
+   font-size: 16px;
+   font-style: italic;
+}
+.personal__box-item-number {
+   color: $bg;
+   @include f700;
+   font-size: 16px;
+}
+.personal__box-item-line {
+   height: 15px;
+   background-color: #f4f4f4;
+   border-radius: 3px;
+   margin-bottom: 23px;
+   span {
+      display: block;
+      height: 15px;
+      border-radius: 3px;
+      background-image: url(../images/pro-bar.jpg);
+      background-repeat: repeat;
+   }
+}
+
+// end profile
 
 @import "media";
