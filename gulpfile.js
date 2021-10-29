@@ -56,10 +56,11 @@ function scripts() {
 
 
 function styles() {
-  return src(['app/scss/style.scss',
+  return src([
     'node_modules/slick-carousel/slick/slick.css',
     'node_modules/rateyo/src/jquery.rateyo.css',
-    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
+    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+    'app/scss/style.scss'
   ])
     .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(concat('style.min.css'))
