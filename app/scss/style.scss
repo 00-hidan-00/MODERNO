@@ -1156,7 +1156,7 @@
       }
    }
 }
-.tab_content {
+.tab__content {
    background-color: #fff;
    border: 1px solid #d7d7d7;
    border-top: none;
@@ -2055,7 +2055,7 @@
    .tabs .tab + .tab {
       border-left: none;
    }
-   .tab_content {
+   .tab__content {
       width: 100%;
       padding: 0;
       border: none;
@@ -2105,7 +2105,17 @@
       color: #707070;
    }
 }
-
+.settings__inner-btn {
+   display: flex;
+   justify-content: end;
+}
+.settings__btn {
+   background-color: $green;
+   padding: 14px 35px 12px;
+   border: none;
+   color: #fff;
+   cursor: pointer;
+}
 //end settings
 
 @import "media";
