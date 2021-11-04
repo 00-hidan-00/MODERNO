@@ -13,7 +13,7 @@ function browsersync() {
     server: {
       baseDir: 'app/'
     },
-    tunnel: true
+    tunnel: 'true'
   });
 }
 
